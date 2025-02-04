@@ -3,10 +3,37 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+
+images:
+  - image_path: http://sachinchoolur.github.io/lightslider/img/cS-1.jpg
+    thumb_image_path: http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg
+    title: Apple Pie
+  - image_path: http://sachinchoolur.github.io/lightslider/img/cS-2.jpg
+    thumb_image_path: http://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg
+    title: Apple Pie
+  - image_path: http://sachinchoolur.github.io/lightslider/img/cS-3.jpg
+    thumb_image_path: http://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg
+    title: Apple Pie
+  - image_path: http://sachinchoolur.github.io/lightslider/img/cS-4.jpg
+    thumb_image_path: http://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg
+    title: Apple Pie
+  - image_path: http://sachinchoolur.github.io/lightslider/img/cS-5.jpg
+    thumb_image_path: http://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg
+    title: Apple Pie
 ---
 
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat lorem vel eros volutpat egestas. Nunc commodo ligula at libero ullamcorper scelerisque. Nulla a lobortis arcu. Suspendisse nisi nunc, euismod vel lobortis at, ultrices quis ligula. Curabitur in imperdiet nunc, eu vulputate ligula. Pellentesque at est a lorem gravida tempus eu vel enim. Maecenas suscipit congue lectus et luctus. Ut imperdiet, lorem in pellentesque iaculis, ligula lacus pharetra augue, eu venenatis tortor massa vitae velit. Vivamus ultricies felis orci, id ullamcorper purus pulvinar eu. Vestibulum fringilla nibh magna, at suscipit ex aliquet sed. Quisque vel sapien ac neque cursus maximus.</p>
+
+<div class="demo">
+<ul id="lightSlider">
+  {% for image in page.images %}
+    <li  data-thumb="{{ image.image_path }}">
+      <img src="{{ image.image_path }}" />
+    </li>
+  {% endfor %}
+</ul>
+</div>
 
 <p>Phasellus venenatis tristique vestibulum. Proin non malesuada diam. Integer mi mauris, semper eget aliquet at, fermentum et purus. Donec efficitur vestibulum ex non consectetur. Sed dictum at purus nec luctus. Sed aliquam enim nec ex consequat, non congue nibh maximus. Suspendisse potenti. Morbi luctus nunc mauris, eu varius arcu viverra varius.</p>
 
